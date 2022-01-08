@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../desafio2javascript/desafio2.js"></script>
+    <title>DESAFIO 2 - JÔNATHAS CABÊÇO - HTML-CSS</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="../desafio2javascript/desafio2.css">
+</head>
+<body>
+  <header>
+      <div id="textoCabecalho" class="flex">
+      <h1>ME ACHA!</h1>
+      <h5>ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</h5>
+      <span class="material-icons icons-list">
+        travel_explore
+        </span>
+    </div>
+  </header>
+  <main>
+      <div id="caixaBuscaCep" class="flex">        
+         <form action="">
+              <label for="cep">CEP</label>
+              <input type="text" name="cep" id="cep" required pattern="\d{5}-\d{3}" 
+              placeholder="Digite seu CEP" autocomplete="off">
+              <label for="rua">Rua</label>
+              <input type="text" name="rua" id="logradouro" placeholder="Digite o nome da rua" autocomplete="off">
+              <label for="bairro">Bairro</label>
+              <input type="text" name="bairro" id="bairro" placeholder="Digite o nome do bairro" autocomplete="off">
+              <label for="cidade">Cidade</label>
+              <input type="text" name="cidade" id="localidade" placeholder="Digite a cidade" autocomplete="off">
+              <label for="estado">Estado</label>
+              <input type="text" name="estado" id="uf" placeholder="Digite o estado" autocomplete="off">
+              <input type="submit" value="Buscar" id="buscarCep">
+          </form>        
+      </div>
+  </main>  
+</body>
+</html>
